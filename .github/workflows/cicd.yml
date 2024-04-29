@@ -27,4 +27,4 @@ jobs:
       - name: pull image from the docker hub
         run: docker pull gillnavi/nodejs-app:latest
       - name: Run Docker Container
-        run: docker run -d -p 3001:3001  -e ${{secrets.MONGO_URL}} -e ${{secrets.PORT}}  -e ${{secrets.JWT_SECRET}} --name nodejs-app-container gillnavi/nodejs-app:latest 
+        run: docker run -d -p 3001:3001  -e ${{secrets.MONGO_URL}} -e ${{secrets.PORT}}  -e ${{secrets.JWT_SECRET}} --name nodejs-app-container2 gillnavi/nodejs-app:latest 
